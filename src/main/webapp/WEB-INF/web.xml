@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AddServlet</servlet-name>
+  	<display-name>AddServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibm.devops.AddServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AllDataServlet</servlet-name>
+  	<display-name>AllDataServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.ibm.devops.AllDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<display-name>DeleteEmployee</display-name>
+  	<description></description>
+  	<servlet-class>com.ibm.devops.DeleteEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddServlet</servlet-name>
+  	<url-pattern>/addemployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AllDataServlet</servlet-name>
+  	<url-pattern>/allemployees</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<url-pattern>/deleteemployee</url-pattern>
+  </servlet-mapping>
+</web-app>
